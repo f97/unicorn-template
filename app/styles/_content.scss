@@ -16,6 +16,9 @@
         font-weight: 700;
         font-size: 14px;
         margin: 16px auto -1px auto;
+        a {
+            color: $main-color;
+        }
         &--current {
             border-bottom: 1px solid #5a5a5a;
         }
@@ -24,6 +27,11 @@
 
 .right {
     display: none;
+    &__btn {
+        float: left;
+        padding: 5px;
+        cursor: pointer;
+    }
 }
 
 .content {
@@ -55,9 +63,6 @@
         float: left;
         margin-right: 10px;
     }
-    &__date {
-        float: left;
-    }
 }
 
 @media only screen and (min-width: 640px) {
@@ -81,20 +86,10 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    html,
-    body {
-        overflow: hidden;
-    }
     .content {
         width: 70%;
         height: auto;
         float: right;
-    }
-    .posts-list {
-        margin-top: 46px;
-        width: calc(100% + 20px);
-        height: calc(100vh - 46px);
-        overflow-y: scroll;
     }
     .post {
         max-width: 600px;

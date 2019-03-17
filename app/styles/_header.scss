@@ -13,6 +13,9 @@
         font-weight: 700;
         text-transform: uppercase;
         margin: 26px 0;
+        a {
+            color: #333;
+        }
     }
     &__subtitle {
         margin: 26px 0;
@@ -22,6 +25,7 @@
         font-size: 15px;
         color: #565654;
         margin: 26px 0;
+        line-height: 26px;
     }
     &__footer {
         position: fixed;
