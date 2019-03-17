@@ -1,2 +1,3 @@
-# unicorn-template
+# Unicorn template
 Unicorn HTML Template
+

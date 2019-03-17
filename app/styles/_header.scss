@@ -1,0 +1,61 @@
+.header {
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f2f2f2;
+    &__siteinfo {
+        margin-top: 80px;
+    }
+    &__logo {
+        width: 100px;
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 26px 0;
+    }
+    &__subtitle {
+        margin: 26px 0;
+        font-style: italic;
+    }
+    &__description {
+        font-size: 15px;
+        color: #565654;
+        margin: 26px 0;
+    }
+    &__footer {
+        position: fixed;
+        bottom: 0;
+        background-color: #fff;
+        z-index: 10;
+        width: 100%;
+        padding: 5px;
+        border-top: 1px solid #f2f2f2;
+    }
+    &__copyright {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        float: left;
+        width: 30%;
+        border-right: 1px solid #f2f2f2;
+        height: 100%;
+        background-color: #fff;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 10;
+        &__siteinfo {
+            margin-top: 45%;
+        }
+        &__footer {
+            position: absolute;
+            padding: unset;
+            border: unset;
+            bottom: 10px;
+        }
+    }
+}

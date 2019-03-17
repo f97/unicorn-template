@@ -2,16 +2,65 @@
 @import 'reset';
 @import 'mixin';
 // Declare variable
+$font: inconsolata,
+Lucida Sans Typewriter,
+Lucida Console,
+monaco,
+Menlo,
+Bitstream Vera Sans Mono,
+Consolas,
+monospace;
+$main-color: #5A5A5A;
 //Defaut CSS
-body {}
+body {
+    font-family: $font;
+    font-size: 16px;
+    font-weight: 400;
+}
 
-a {}
+a {
+    text-decoration: none;
+    color: $main-color;
+}
 
-p {}
+p {
+    line-height: 1.7em;
+    font-size: 15px;
+}
 
 button {
     cursor: pointer;
 }
 
 //Global CSS
+.container {
+    padding: 0 20px;
+    margin: 0 auto;
+}
 
+// Custom scrollbar
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        padding-left: 40px;
+    }
+}
+
+//Import dependeci
+@import 'header';
+@import 'content';

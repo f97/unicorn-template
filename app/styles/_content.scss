@@ -1,0 +1,108 @@
+/* Sticker menu */
+
+.main-menu {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.menu {
+    height: 45px;
+    display: flex;
+    &__item {
+        font-weight: 700;
+        font-size: 14px;
+        margin: 16px auto -1px auto;
+        &--current {
+            border-bottom: 1px solid #5a5a5a;
+        }
+    }
+}
+
+.right {
+    display: none;
+}
+
+.content {
+    margin-bottom: 60px;
+}
+
+.post {
+    text-align: justify;
+    margin: 22px 0;
+    border-bottom: 1px solid #f2f2f2;
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 14px;
+        line-height: 30px;
+    }
+    &__excerpt {
+        margin-bottom: 14px;
+    }
+    &__footer {
+        font-size: 12px;
+        color: #bbbbbb;
+        margin-bottom: 22px;
+    }
+    &__update {
+        float: left;
+        margin-right: 10px;
+    }
+    &__date {
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .menu {
+        float: left;
+        &__item {
+            margin-left: 15px;
+        }
+    }
+    .right {
+        display: block;
+        float: right;
+        padding-top: 7px;
+        padding-right: 20px;
+        &__favicon {
+            width: 32px;
+            height: 32px;
+            border-radius: 300px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    html,
+    body {
+        overflow: hidden;
+    }
+    .content {
+        width: 70%;
+        height: auto;
+        float: right;
+    }
+    .posts-list {
+        margin-top: 46px;
+        width: calc(100% + 20px);
+        height: calc(100vh - 46px);
+        overflow-y: scroll;
+    }
+    .post {
+        max-width: 600px;
+        &__title {
+            text-align: left;
+        }
+    }
+    .main-menu {
+        width: 70%;
+    }
+}

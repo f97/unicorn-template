@@ -6,6 +6,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Template</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=vietnamese" rel="stylesheet">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -19,28 +20,33 @@
   <!-- Header -->
   <header class="header sidebar">
 
-    <!-- Site info -->
-    <div class="header__siteinfo">
-      <figure class="header__logo"><a href="#"><img src="https://mrsoi.com//images/logo@2x.png" alt="Logo"></a></figure>
-      <h1 class="header__title"><a href="#">Tôi là Sói</a></h1>
-      <h4 class="header__subtitle">by Huỳnh Đức Khoản</h4>
-      <h3 class="header__description">Một con người luôn nhìn sự thay đổi của thế giới bằng con mắt của người cõi trên…
-        :)))</h3>
-    </div><!-- Site info -->
+    <div class="container">
+      <!-- Site info -->
+      <div class="header__siteinfo">
+        <figure><a href="#"><img class="header__logo" src="https://mrsoi.com//images/logo@2x.png" alt="Logo"></a>
+        </figure>
+        <h1 class="header__title"><a href="#">Tôi là Sói</a></h1>
+        <h4 class="header__subtitle">by Huỳnh Đức Khoản</h4>
+        <h5 class="header__description">Một con người luôn nhìn sự thay đổi của thế giới bằng con mắt của người cõi
+          trên…
+          :)))</h5>
+      </div><!-- Site info -->
 
-    <!-- Persional social -->
-    <nav class="header__social">
-      <ul class="social-links">
-        <li><a href="https://twitter.com/huynhduckhoan" target="_blank" title="Twitter"><i
-              class="fa fa-twitter"></i></a>
-        </li>
-        <li><a href="https://viblo.asia/u/huynhduckhoan" target="_blank" title="Viblo"><i class="fa fa-viadeo"></i></a>
-        </li>
-        <li><a href="http://github.com/f97" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
-        <li><a href="https://spiderum.com/nguoi-dung/huynhduckhoan" target="_blank" title="Spiderum"><i
-              class="fa fa-snapchat-ghost"></i></a></li>
-      </ul>
-    </nav><!-- Persional social -->
+      <!-- Persional social -->
+      <nav class="header__social">
+        <ul class="social-links">
+          <li><a href="https://twitter.com/huynhduckhoan" target="_blank" title="Twitter"><i
+                class="fa fa-twitter"></i></a>
+          </li>
+          <li><a href="https://viblo.asia/u/huynhduckhoan" target="_blank" title="Viblo"><i
+                class="fa fa-viadeo"></i></a>
+          </li>
+          <li><a href="http://github.com/f97" target="_blank" title="Github"><i class="fa fa-github"></i></a></li>
+          <li><a href="https://spiderum.com/nguoi-dung/huynhduckhoan" target="_blank" title="Spiderum"><i
+                class="fa fa-snapchat-ghost"></i></a></li>
+        </ul>
+      </nav><!-- Persional social -->
+    </div>
 
     <!-- Site copyright -->
     <div class="header__footer">
@@ -58,18 +64,31 @@
 
   <!-- Main content -->
   <main class="content">
-    <div class="container">
 
-      <!-- Main menu -->
+    <!-- Main menu -->
+    <div class="main-menu">
+
       <nav>
         <ul class="menu">
-          <li class="menu__item menu__item--current"><a href="/">Home</a></li>
-          <li class="menu__item"><a href="/timeline">Timeline</a></li>
+          <li class="menu__item"><a href="/">Home</a></li>
+          <li class="menu__item menu__item--current"><a href="/timeline">Timeline</a></li>
           <li class="menu__item"><a href="/bucket-list">Bucket List</a></li>
           <li class="menu__item"><a href="/books">Sách</a></li>
           <li class="menu__item"><a href="/about">Me</a></li>
         </ul>
-      </nav><!-- Main menu -->
+      </nav>
+
+      <div class="right">
+        <div class="right__btn">
+          <a class="fa fa-chevron-left" onclick="window.history.go(-1)" style="display:none"></a>
+        </div>
+        <img class="right__favicon" src="/images/favicon.png" title="Tôi là Sói">
+      </div>
+
+    </div><!-- Main menu -->
+
+
+    <div class="container">
 
       <!-- Section posts list -->
       <section class="section posts-list">
@@ -92,7 +111,6 @@
             <time class="post__update" datetime="1997-08-23T20:00Z">23-08-1997</time>
             <!-- Post tags list -->
             <div class="post__tags">
-              <i class="fa fa-tag"></i>
               <a class="tag" href="/tags/blog/" title="blog">blog </a>
               <a class="tag" href="/tags/random/" title="random">random </a>
               <a class="tag" href="/tags/no-code/" title="no-code">no-code </a>
