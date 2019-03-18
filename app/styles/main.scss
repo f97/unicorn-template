@@ -60,18 +60,18 @@ button {
 }
 
 @media only screen and (min-width: 960px){
-    html,
-    body {
-        overflow: hidden;
-    }
+    // html,
+    // body {
+    //     overflow: hidden;
+    // }
     .container {
         padding: 0 40px;
     }
     .section {
-        margin-top: 46px;
-        width: 100%;
-        height: calc(100vh - 46px);
-        overflow-y: scroll;
+        margin-top: 60px;
+        // width: 100%;
+        // height: calc(100vh - 46px);
+        // overflow-y: scroll;
     }
 }
 
@@ -79,3 +79,5 @@ button {
 @import 'header';
 @import 'content';
 @import 'single';
+@import 'navigation';
+@import 'comment';

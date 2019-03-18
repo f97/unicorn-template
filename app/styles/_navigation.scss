@@ -1,0 +1,25 @@
+.navigation {
+    margin-bottom: 50px;
+    .screen-reader-text {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .nav-links {
+        @include clearfix;
+        div {
+            padding: 8px;
+            border: 1px solid #CCC;
+        }
+    }
+    .nav-previous {
+        float: right;
+    }
+    .nav-next {
+        float: left;
+    }
+}
+@media only screen and (min-width: 960px){
+    .navigation {
+        max-width: 600px;
+    }
+}

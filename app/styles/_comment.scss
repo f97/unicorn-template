@@ -1,0 +1,77 @@
+/* Building for wordpress site */
+
+#comments {
+    padding: 0 15px;
+    color: #5a5a5a;
+    margin-bottom: 50px;
+}
+
+.comment-list {
+    li {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.comments-title {
+    margin-bottom: 15px;
+}
+
+.comment-body {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #EEE;
+    margin-bottom: 15px;
+}
+
+.comment-metadata {
+    font-size: 12px;
+}
+
+.comment-respond {
+    input {
+        border: 1px solid #EEE;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-bottom: 7px;
+    }
+    textarea {
+        border: 1px solid #EEE;
+        max-height: 80px;
+        width: calc(100% - 25px);
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    label {
+        display: none;
+    }
+    .comment-form-cookies-consent label {
+        display: inline-block;
+    }
+}
+
+.comment-content {
+    margin: 10px 0;
+    color: #333;
+}
+
+.comment-meta {
+    @include clearfix;
+    .comment-author {
+        float: left;
+    }
+    .comment-metadata {
+        float: right;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    #comments {
+        max-width: 600px;
+        padding-left: 40px;
+    }
+}
+
+.reply {
+    display: none;
+}
