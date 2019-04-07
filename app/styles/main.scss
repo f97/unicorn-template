@@ -12,6 +12,7 @@ Bitstream Vera Sans Mono,
 Consolas,
 monospace;
 $main-color: #5A5A5A;
+
 //Defaut CSS
 body {
     font-family: $font;
@@ -22,6 +23,7 @@ body {
 a {
     text-decoration: none;
     color: #4786d6;
+
     &:hover {
         color: #2f69b3;
     }
@@ -59,7 +61,8 @@ button {
     background: #333;
 }
 
-@media only screen and (min-width: 960px){
+@media only screen and (min-width: 960px) {
+
     // html,
     // body {
     //     overflow: hidden;
@@ -67,6 +70,7 @@ button {
     .container {
         padding: 0 40px;
     }
+
     .section {
         margin-top: 60px;
         // width: 100%;

@@ -114,6 +114,13 @@
         color: #565654;
     }
 
+    .mute {
+        color: #999;
+        font-style: italic;
+        font-size: .9em;
+        margin: 10px 0;
+    }
+
     .mute.sidenote {
         margin-top: 0;
         margin-bottom: 16px;
@@ -128,11 +135,16 @@
         line-height: 1.5em;
     }
 
-    .mute {
-        color: #999;
-        font-style: italic;
-        font-size: .9em;
-        margin: 10px 0;
+    .mute.sidenote:before {
+        display: block;
+        content: "";
+        width: 0;
+        height: 0;
+        border-top: 10px solid #f5f6fa;
+        border-left: 10px solid transparent;
+        position: absolute;
+        top: 10px;
+        left: -10px;
     }
 }
 

@@ -90,17 +90,12 @@
 
 @media only screen and (min-width: 960px){
     .content {
-        width: 70%;
-        height: auto;
-        float: right;
+        margin-left: 400px;
     }
     .post {
         max-width: 600px;
         &__title {
             text-align: left;
         }
-    }
-    .main-menu {
-        width: 70%;
     }
 }
