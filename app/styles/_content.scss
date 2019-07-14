@@ -18,6 +18,7 @@
     &__item {
         font-weight: 700;
         font-size: 14px;
+        margin-left: 15px;
         a {
             color: $main-color;
         }
@@ -89,11 +90,11 @@
 }
 
 @media only screen and (min-width: 640px) {
+    .content {
+        width: calc(100% - 210px);
+    }
     .menu {
         float: left;
-        &__item {
-            margin-left: 15px;
-        }
     }
     .right {
         display: block;
@@ -110,12 +111,52 @@
 
 @media only screen and (min-width: 960px){
     .content {
-        margin-left: 400px;
+        margin-left: 250px;
+        width: calc(100% - 250px);
+        .section, .comments-area {
+            width: 500px;
+        }
     }
     .post {
-        max-width: 600px;
         &__title {
             text-align: left;
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .content {
+        margin-left: 300px;
+        width: calc(100% - 300px);
+        .section, .comments-area {
+            width: 500px;
+        }
+    }
+    .post {
+        &__title {
+            text-align: left;
+        }
+    }
+    .article__content {
+        margin-left: 300px;
+    }
+}
+
+@media only screen and (min-width: 1366px){
+    .content {
+        margin-left: 400px;
+        width: calc(100% - 400px);
+        .section, .comments-area {
+            width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            right: 90px;
+        }
+        .posts-list{
+            margin-left: unset;
+            margin-right: unset;
+            position: unset;
         }
     }
 }
